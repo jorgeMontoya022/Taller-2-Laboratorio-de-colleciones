@@ -47,7 +47,7 @@ public class Main {
     }
 
     private static void registrarIngreso() {
-        System.out.println("Ingrese su número de documento (id): ");
+        System.out.print("Ingrese su número de documento (id): ");
         int id = scanner.nextInt();
         scanner.nextLine();
         Empleado empleado = edificio.buscarEmpleado(id);
