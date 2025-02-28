@@ -59,6 +59,7 @@ public class Main {
     private static void buscarProducto() {
         System.out.print("Ingrese el código del producto: ");
         String codigo = scanner.nextLine();
+        scanner.nextLine();
         Producto producto = empresa.buscarProducto(codigo);
         if (producto == null){
             System.err.println("No existe");
