@@ -15,7 +15,7 @@ public class Main {
             System.out.println("2.Buscar Producto");
             System.out.println("3.Mostrar lista");
             System.out.println("4.salir");
-            System.out.print("Elija una opción:");
+            System.out.print("Elija una opción: ");
 
             opcion = scanner.nextInt();
             scanner.nextLine();
@@ -51,17 +51,17 @@ public class Main {
         if(empresa.agregarProducto(producto)){
             System.out.println("Producto agregado");
         } else {
-            System.out.println("El producto no ha sido agregado");
+            System.err.println("El producto no ha sido agregado");
         }
 
     }
 
     private static void buscarProducto() {
-        System.out.print("Ingrese el código del producto");
+        System.out.print("Ingrese el código del producto: ");
         String codigo = scanner.nextLine();
         Producto producto = empresa.buscarProducto(codigo);
         if (producto == null){
-            System.out.println("No existe");
+            System.err.println("No existe");
         } else {
             System.out.println(producto);
         }
@@ -70,7 +70,7 @@ public class Main {
     private static void mostrarLista() {
         TreeSet<Producto> listaProductos = empresa.getListaProductos();
         if (listaProductos.isEmpty()){
-            System.out.println("No hay productos para mostrar");
+            System.err.println("No hay productos para mostrar");
         } else {
             System.out.println(listaProductos.toString());
         }
