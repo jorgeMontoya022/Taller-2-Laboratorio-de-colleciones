@@ -36,7 +36,6 @@ public class PilaTipo {
 
             // Se añaden de nuevo los elementos de la copia a la original, para que estén en el mismo orden.
             pila.push(pilaCopia.pop());
-            System.out.println(pila.peek());
         }
     }
 }

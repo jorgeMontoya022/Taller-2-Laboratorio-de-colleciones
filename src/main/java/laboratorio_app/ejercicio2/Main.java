@@ -7,7 +7,7 @@ public class Main {
         PilaTipo pilaExclusiva = new PilaTipo();
 
         // Primer Objeto para agregar.
-        pilaExclusiva.agregarPila(6);
+        pilaExclusiva.agregarPila("hola");
 
         pilaExclusiva.agregarPila(true);
         pilaExclusiva.agregarPila(7);
