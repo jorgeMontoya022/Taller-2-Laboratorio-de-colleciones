@@ -1,6 +1,5 @@
 package laboratorio_app.ejercicio1;
 
-import java.util.Comparator;
 
 public class Producto implements Comparable<Producto> {
     private String nombreProducto;

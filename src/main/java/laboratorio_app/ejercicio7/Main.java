@@ -2,21 +2,25 @@ package laboratorio_app.ejercicio7;
 
 public class Main {
 
-    public void main (String[] args){
+    public static void main (String[] args){
 
-        Banco.agregarCliente("Pedro");
-        Banco.agregarCliente("Robinson");
-        Banco.agregarCliente("Rosa");
+        Banco banco = new Banco();
 
-        Banco.mostrarCola();
 
-        Banco.atenderCliente();
-        Banco.mostrarCola();
 
-        Banco.agregarClientePrioritario("Pablo");
-        Banco.mostrarCola();
-        Banco.atenderCliente();
-        Banco.mostrarCola();
+        banco.agregarCliente("Pedro");
+        banco.agregarCliente("Robinson");
+        banco.agregarCliente("Rosa");
+
+        banco.mostrarCola();
+
+        banco.atenderCliente();
+        banco.mostrarCola();
+
+        banco.agregarClientePrioritario("Pablo");
+        banco.mostrarCola();
+        banco.atenderCliente();
+        banco.mostrarCola();
 
     }
 }

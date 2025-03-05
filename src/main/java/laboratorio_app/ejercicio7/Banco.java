@@ -4,13 +4,19 @@ import java.util.LinkedList;
 
 public class Banco {
 
+    public Banco() {
+        Banco.clientes = new LinkedList<>();
+    }
+
     private static LinkedList<String> clientes;
     
-        public static void agregarCliente (String cliente){
+        public void agregarCliente (String cliente){
             clientes.add(cliente);
     }
 
-    public static void atenderCliente (){
+    
+
+    public void atenderCliente (){
         if (!clientes.isEmpty()){
             String clienteActual = clientes.removeFirst();
             System.out.println("Cliente " + clienteActual + " está siendo atendido");
@@ -19,12 +25,14 @@ public class Banco {
             System.out.println("La cola está vacía");
         }
     }
-    public static void agregarClientePrioritario (String cliente){
+    public void agregarClientePrioritario (String cliente){
         clientes.addFirst(cliente);
     }
 
-    public static void mostrarCola (){
+    public void mostrarCola (){
         System.out.println(clientes);
     }
+
+    
 
 }
