@@ -22,7 +22,7 @@ public class Mensajeria {
 
     public void mostrarMensajes(){
         for (String mensaje: historialMensajes){
-            System.out.println(mensaje);
+            System.out.println("Mensaje" + mensaje);
 
         }
     }
